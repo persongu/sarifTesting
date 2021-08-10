@@ -9,22 +9,23 @@
                     "informationUri": "https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/how-codeguru-reviewer-works.html",
                     "rules": [
                         {
-                            "id": "RuleId",
-                            "name": "RuleName",
+                            "id": "hardcoded-credentials",
+                            "name": "Hardcoded credentials",
                             "shortDescription": {
-                                "text": "Rule Short Description"
+                                "text": "Credentials, such as passwords and access keys, should not be present in source code."
                             },
                             "fullDescription": {
-                                "text": "Rule Long Description"
+                                "text": "Access credentials, such as passwords and access keys, should not be present in source code. Hard-coding credentials may lead to unintended leaks even after removing them, as version control systems may keep copies of older versions of the code. Credentials should be stored securely and obtained from the runtime environment."
                             },
                             "defaultConfiguration": {
                                 "level": "error"
                             },
                             "properties": {
                                 "tags": [
-                                    "x",
-                                    "y",
-                                    "z"
+                                    "aws",
+                                    "kms",
+                                    "jersey",
+                                    "security"
                                 ]
                             }
                         }
@@ -83,7 +84,7 @@
                                                         "endLine": 20
                                                     },
                                                     "artifactLocation": {
-                                                        "uri": "./src/main/java/com/mycompany/app/Server2.java"
+                                                        "uri": "src/main/java/com/mycompany/app/Server2.java"
                                                     }
                                                 }
                                             }
