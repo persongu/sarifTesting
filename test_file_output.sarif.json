@@ -34,7 +34,7 @@
             },
             "results": [
                 {
-                    "ruleId": "AWSBestPractices",
+                    "ruleId": "hardcoded-credentials",
                     "level": "note",
                     "locations": [
                         {
@@ -50,7 +50,7 @@
                         }
                     ],
                     "message": {
-                        "text": "Description"
+                        "text": "Credentials, such as passwords and access keys, should not be present in source code."
                     },
                     "codeFlows": [
                         {
