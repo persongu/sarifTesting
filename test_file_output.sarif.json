@@ -18,7 +18,7 @@
                                 "text": "LongDescription"
                             },
                             "defaultConfiguration": {
-                                "level": "Error"
+                                "level": "error"
                             },
                             "properties": {
                                 "tags": [
@@ -57,10 +57,10 @@
                                 {
                                     "locations": [
                                         {
-                                            "message": {
-                                                "text": "CLComment"
-                                            },
                                             "location": {
+                                                "message": {
+                                                    "text": "CLComment"
+                                                },
                                                 "physicalLocation": {
                                                     "region": {
                                                         "startLine": 24,
@@ -73,10 +73,10 @@
                                             }
                                         },
                                         {
-                                            "message": {
-                                                "text": "CLComment2"
-                                            },
                                             "location": {
+                                                "message": {
+                                                    "text": "CLComment2"
+                                                },
                                                 "physicalLocation": {
                                                     "region": {
                                                         "startLine": 17,
@@ -89,17 +89,17 @@
                                             }
                                         },
                                         {
-                                            "message": {
-                                                "text": "C2LComment"
-                                            },
                                             "location": {
+                                                "message": {
+                                                    "text": "C2LComment"
+                                                },
                                                 "physicalLocation": {
                                                     "region": {
-                                                        "startLine": "L2ineNumber",
-                                                        "endLine": "E2ndlineNumber"
+                                                        "startLine": 1,
+                                                        "endLine": 3
                                                     },
                                                     "artifactLocation": {
-                                                        "uri": "C2FFP"
+                                                        "uri": "main/java/com/mycompany/app/Server.java"
                                                     }
                                                 }
                                             }
