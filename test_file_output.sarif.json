@@ -12,10 +12,10 @@
                             "id": "RuleId",
                             "name": "RuleName",
                             "shortDescription": {
-                                "text": "ShortDescription"
+                                "text": "Rule Short Description"
                             },
                             "fullDescription": {
-                                "text": "LongDescription"
+                                "text": "Rule Long Description"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -33,13 +33,13 @@
             },
             "results": [
                 {
-                    "ruleId": "AWSBestPractices",
-                    "level": "note",
+                    "ruleId": "RuleId",
+                    "level": "error",
                     "locations": [
                         {
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "uri": "main/java/com/mycompany/app/App.java"
+                                    "uri": "./src/main/java/com/mycompany/app/App.java"
                                 },
                                 "region": {
                                     "startLine": 14,
@@ -67,7 +67,7 @@
                                                         "endLine": 25
                                                     },
                                                     "artifactLocation": {
-                                                        "uri": "main/java/com/mycompany/app/Server.java"
+                                                        "uri": "./src/main/java/com/mycompany/app/Server.java"
                                                     }
                                                 }
                                             }
@@ -83,7 +83,7 @@
                                                         "endLine": 20
                                                     },
                                                     "artifactLocation": {
-                                                        "uri": "main/java/com/mycompany/app/Server2.java"
+                                                        "uri": "./src/main/java/com/mycompany/app/Server2.java"
                                                     }
                                                 }
                                             }
@@ -99,7 +99,7 @@
                                                         "endLine": 3
                                                     },
                                                     "artifactLocation": {
-                                                        "uri": "main/java/com/mycompany/app/Server.java"
+                                                        "uri": "./src/main/java/com/mycompany/app/Server.java"
                                                     }
                                                 }
                                             }
