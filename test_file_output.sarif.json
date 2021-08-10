@@ -14,7 +14,7 @@
                             "shortDescription": {
                                 "text": "Credentials, such as passwords and access keys, should not be present in source code."
                             },
-                            "fullDescription": {
+                            "help": {
                                 "text": "Access credentials, such as passwords and access keys, should not be present in source code. Hard-coding credentials may lead to unintended leaks even after removing them, as version control systems may keep copies of older versions of the code. Credentials should be stored securely and obtained from the runtime environment."
                             },
                             "defaultConfiguration": {
