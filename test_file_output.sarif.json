@@ -33,13 +33,13 @@
             },
             "results": [
                 {
-                    "ruleId": "RuleId",
-                    "level": "error",
+                    "ruleId": "AWSBestPractices",
+                    "level": "note",
                     "locations": [
                         {
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "uri": "./src/main/java/com/mycompany/app/App.java"
+                                    "uri": "src/main/java/com/mycompany/app/App.java"
                                 },
                                 "region": {
                                     "startLine": 14,
@@ -67,7 +67,7 @@
                                                         "endLine": 25
                                                     },
                                                     "artifactLocation": {
-                                                        "uri": "./src/main/java/com/mycompany/app/Server.java"
+                                                        "uri": "src/main/java/com/mycompany/app/Server.java"
                                                     }
                                                 }
                                             }
@@ -99,7 +99,7 @@
                                                         "endLine": 3
                                                     },
                                                     "artifactLocation": {
-                                                        "uri": "./src/main/java/com/mycompany/app/Server.java"
+                                                        "uri": "src/main/java/com/mycompany/app/Server.java"
                                                     }
                                                 }
                                             }
