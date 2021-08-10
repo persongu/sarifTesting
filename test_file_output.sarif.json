@@ -55,52 +55,56 @@
                         {
                             "threadFlows": [
                                 {
-                                    "message": {
-                                        "text": "CLComment"
-                                    },
-                                    "location": {
-                                        "physicalLocation": {
-                                            "region": {
-                                                "startLine": 24,
-                                                "endLine": 25
+                                    "locations": [
+                                        {
+                                            "message": {
+                                                "text": "CLComment"
                                             },
-                                            "artifactLocation": {
-                                                "uri": "main/java/com/mycompany/app/Server.java"
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "region": {
+                                                        "startLine": 24,
+                                                        "endLine": 25
+                                                    },
+                                                    "artifactLocation": {
+                                                        "uri": "main/java/com/mycompany/app/Server.java"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "message": {
+                                                "text": "CLComment2"
+                                            },
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "region": {
+                                                        "startLine": 17,
+                                                        "endLine": 20
+                                                    },
+                                                    "artifactLocation": {
+                                                        "uri": "main/java/com/mycompany/app/Server2.java"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "message": {
+                                                "text": "C2LComment"
+                                            },
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "region": {
+                                                        "startLine": "L2ineNumber",
+                                                        "endLine": "E2ndlineNumber"
+                                                    },
+                                                    "artifactLocation": {
+                                                        "uri": "C2FFP"
+                                                    }
+                                                }
                                             }
                                         }
-                                    }
-                                },
-                                {
-                                    "message": {
-                                        "text": "CLComment2"
-                                    },
-                                    "location": {
-                                        "physicalLocation": {
-                                            "region": {
-                                                "startLine": 17,
-                                                "endLine": 20
-                                            },
-                                            "artifactLocation": {
-                                                "uri": "main/java/com/mycompany/app/Server2.java"
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "message": {
-                                        "text": "C2LComment"
-                                    },
-                                    "location": {
-                                        "physicalLocation": {
-                                            "region": {
-                                                "startLine": "L2ineNumber",
-                                                "endLine": "E2ndlineNumber"
-                                            },
-                                            "artifactLocation": {
-                                                "uri": "C2FFP"
-                                            }
-                                        }
-                                    }
+                                    ]
                                 }
                             ]
                         }
