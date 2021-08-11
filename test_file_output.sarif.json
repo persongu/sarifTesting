@@ -107,7 +107,7 @@
                                         {
                                             "location": {
                                                 "message": {
-                                                    "text": "CLComment2"
+                                                    "text": "Code Location Comment!"
                                                 },
                                                 "physicalLocation": {
                                                     "region": {
@@ -123,7 +123,7 @@
                                         {
                                             "location": {
                                                 "message": {
-                                                    "text": "NestedCodeLocationComment"
+                                                    "text": "Nested Code Location Comment!"
                                                 },
                                                 "physicalLocation": {
                                                     "region": {
