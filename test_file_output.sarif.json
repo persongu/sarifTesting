@@ -12,6 +12,9 @@
                             "id": "hardcoded-credentials",
                             "name": "Hardcoded credentials",
                             "shortDescription": {
+                                "text": "Hardcoded credentials"
+                            },
+                            "fullDescription": {
                                 "text": "Credentials, such as passwords and access keys, should not be present in source code."
                             },
                             "help": {
