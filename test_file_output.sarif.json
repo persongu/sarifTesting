@@ -9,6 +9,22 @@
                     "informationUri": "https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/how-codeguru-reviewer-works.html",
                     "rules": [
                         {
+                            "id": "RuleId",
+                            "name": "RuleName",
+                            "shortDescription": {
+                                "text": "RuleName"
+                            },
+                            "fullDescription": {
+                                "text": "ShortDescription"
+                            },
+                            "help": {
+                                "text": "LongDescription."
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            }
+                        },
+                        {
                             "id": "java/hardcoded-credentials@v1.0",
                             "name": "Hardcoded credentials",
                             "shortDescription": {
@@ -22,14 +38,6 @@
                             },
                             "defaultConfiguration": {
                                 "level": "error"
-                            },
-                            "properties": {
-                                "tags": [
-                                    "aws",
-                                    "kms",
-                                    "jersey",
-                                    "security"
-                                ]
                             }
                         }
                     ]
@@ -37,8 +45,86 @@
             },
             "results": [
                 {
+                    "ruleId": "RuleId",
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "src/main/java/com/mycompany/app/App.java"
+                                },
+                                "region": {
+                                    "startLine": 14,
+                                    "endLine": 15
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Description"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "message": {
+                                                    "text": "CLComment"
+                                                },
+                                                "physicalLocation": {
+                                                    "region": {
+                                                        "startLine": 24,
+                                                        "endLine": 25
+                                                    },
+                                                    "artifactLocation": {
+                                                        "uri": "src/main/java/com/mycompany/app/Server.java"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "location": {
+                                                "message": {
+                                                    "text": "CLComment2"
+                                                },
+                                                "physicalLocation": {
+                                                    "region": {
+                                                        "startLine": 17,
+                                                        "endLine": 20
+                                                    },
+                                                    "artifactLocation": {
+                                                        "uri": "src/main/java/com/mycompany/app/Server2.java"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "location": {
+                                                "message": {
+                                                    "text": "NestedCodeLocationComment"
+                                                },
+                                                "physicalLocation": {
+                                                    "region": {
+                                                        "startLine": 1,
+                                                        "endLine": 3
+                                                    },
+                                                    "artifactLocation": {
+                                                        "uri": "src/main/java/com/mycompany/app/Server.java"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
                     "ruleId": "java/hardcoded-credentials@v1.0",
-                    "level": "note",
+                    "level": "error",
                     "locations": [
                         {
                             "physicalLocation": {
