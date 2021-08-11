@@ -9,16 +9,16 @@
                     "informationUri": "https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/how-codeguru-reviewer-works.html",
                     "rules": [
                         {
-                            "id": "hardcoded-credentials",
-                            "name": "Hardcoded credentials",
+                            "id": "RuleId",
+                            "name": "RuleName",
                             "shortDescription": {
-                                "text": "Hardcoded credentials"
+                                "text": "RuleName"
                             },
                             "fullDescription": {
-                                "text": "Credentials, such as passwords and access keys, should not be present in source code."
+                                "text": "ShortDescription"
                             },
                             "help": {
-                                "text": "Access credentials, such as passwords and access keys, should not be present in source code. Hard-coding credentials may lead to unintended leaks even after removing them, as version control systems may keep copies of older versions of the code. Credentials should be stored securely and obtained from the runtime environment."
+                                "text": "LongDescription."
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -37,7 +37,7 @@
             },
             "results": [
                 {
-                    "ruleId": "hardcoded-credentials",
+                    "ruleId": "RecommendationCategory",
                     "level": "note",
                     "locations": [
                         {
@@ -53,7 +53,7 @@
                         }
                     ],
                     "message": {
-                        "text": "Credentials, such as passwords and access keys, should not be present in source code."
+                        "text": "Description"
                     },
                     "codeFlows": [
                         {
@@ -79,7 +79,7 @@
                                         {
                                             "location": {
                                                 "message": {
-                                                    "text": "CLComment2"
+                                                    "text": "NestedCodeLocationComment"
                                                 },
                                                 "physicalLocation": {
                                                     "region": {
@@ -95,7 +95,7 @@
                                         {
                                             "location": {
                                                 "message": {
-                                                    "text": "C2LComment"
+                                                    "text": "NestedCodeLocationComment"
                                                 },
                                                 "physicalLocation": {
                                                     "region": {
