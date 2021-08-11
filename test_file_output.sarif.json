@@ -21,7 +21,7 @@
                                 "text": "LongDescription."
                             },
                             "defaultConfiguration": {
-                                "level": "error"
+                                "level": "note"
                             }
                         },
                         {
@@ -46,7 +46,7 @@
             "results": [
                 {
                     "ruleId": "RuleId",
-                    "level": "error",
+                    "level": "note",
                     "locations": [
                         {
                             "physicalLocation": {
@@ -169,8 +169,8 @@
                                                 },
                                                 "physicalLocation": {
                                                     "region": {
-                                                        "startLine": 17,
-                                                        "endLine": 20
+                                                        "startLine": 16,
+                                                        "endLine": 17
                                                     },
                                                     "artifactLocation": {
                                                         "uri": "src/main/java/com/mycompany/app/Server2.java"
