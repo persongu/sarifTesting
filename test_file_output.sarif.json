@@ -9,16 +9,16 @@
                     "informationUri": "https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/how-codeguru-reviewer-works.html",
                     "rules": [
                         {
-                            "id": "RuleId",
-                            "name": "RuleName",
+                            "id": "java/hardcoded-credentials@v1.0",
+                            "name": "Hardcoded credentials",
                             "shortDescription": {
-                                "text": "RuleName"
+                                "text": "Hardcoded credentials"
                             },
                             "fullDescription": {
-                                "text": "ShortDescription"
+                                "text": "Credentials, such as passwords and access keys, should not be present in source code."
                             },
                             "help": {
-                                "text": "LongDescription."
+                                "text": "Access credentials, such as passwords and access keys, should not be present in source code. Hard-coding credentials may lead to unintended leaks even after removing them, as version control systems may keep copies of older versions of the code. Credentials should be stored securely and obtained from the runtime environment."
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -37,7 +37,7 @@
             },
             "results": [
                 {
-                    "ruleId": "RuleId",
+                    "ruleId": "java/hardcoded-credentials@v1.0",
                     "level": "note",
                     "locations": [
                         {
@@ -53,7 +53,7 @@
                         }
                     ],
                     "message": {
-                        "text": "Description"
+                        "text": "This looks like an AWS access key.\nDon\u2019t embed access keys directly into code. Instead, use the AWS SDK or AWS Command Line Tools to store access keys in a secure location that can be referenced by your code. If an access key is in your code then it could have leaked. Therefore we recommend that you rotate your credentials as soon as possible. Learn more about [Best Practices for Managing AWS Access Keys](https://docs.aws.amazon.com/general/latest/gr/aws-access-keys-best-practices.html)."
                     },
                     "codeFlows": [
                         {
@@ -79,7 +79,7 @@
                                         {
                                             "location": {
                                                 "message": {
-                                                    "text": "NestedCodeLocationComment"
+                                                    "text": "CLComment2"
                                                 },
                                                 "physicalLocation": {
                                                     "region": {
@@ -95,7 +95,7 @@
                                         {
                                             "location": {
                                                 "message": {
-                                                    "text": "NestedCodeLocationComment"
+                                                    "text": "C2LComment"
                                                 },
                                                 "physicalLocation": {
                                                     "region": {
