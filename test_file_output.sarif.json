@@ -27,8 +27,8 @@
                                     "jersey",
                                     "CWE-1",
                                     "CWE-2"
-                                ]
-                                 "security-severity": "7.0"                                
+                                ],
+                                "security-severity": "7.0"                                
                             },
                             "defaultConfiguration": {
                                 "level": "warning"
