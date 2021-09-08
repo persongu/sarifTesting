@@ -56,10 +56,7 @@
                                     "CWE-2"
                                 ]
                             },
-                            "properties.security-severity": 7.0,
-                            "defaultConfiguration": {
-                                "level": "error"
-                            }
+                            "security-severity": 7.0,
                         }
                     ]
                 }
