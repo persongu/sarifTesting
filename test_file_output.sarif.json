@@ -25,7 +25,6 @@
                                     "aws",
                                     "kms",
                                     "jersey",
-                                    "security",
                                     "CWE-1",
                                     "CWE-2"
                                 ]
