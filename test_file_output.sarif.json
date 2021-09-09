@@ -9,28 +9,111 @@
                     "informationUri": "https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/how-codeguru-reviewer-works.html",
                     "rules": [
                         {
-                            "id": "java/insecure-cryptography@v1.0",
-                            "name": "Insecure cryptography",
+                            "id": "java/hardcoded-credentials@v1.0",
+                            "name": "Hardcoded credentials",
                             "shortDescription": {
-                                "text": "Insecure cryptography"
+                                "text": "Hardcoded credentials"
                             },
                             "fullDescription": {
-                                "text": "Weak, broken, or misconfigured cryptography can lead to security vulnerabilities."
+                                "text": "Credentials, such as passwords and access keys, should not be present in source code."
                             },
                             "help": {
-                                "text": "Misuse of cryptography-related APIs can create security vulnerabilities. This includes one or more of the following: algorithms with known weaknesses, certain padding modes, lack of integrity checks, and insufficiently large key sizes."
+                                "text": "Access credentials, such as passwords and access keys, should not be present in source code. Hard-coding credentials may lead to unintended leaks even after removing them, as version control systems may keep copies of older versions of the code. Credentials should be stored securely and obtained from the runtime environment."
                             },
                             "properties": {
                                 "tags": [
-                                    "cryptography",
+                                    "aws",
+                                    "kms",
+                                    "jersey",
                                     "security",
-                                    "digital-signature",
-                                    "cwe-327"
+                                    "CWE-1",
+                                    "CWE-2"
                                 ],
                                 "security-severity": 9
                             },
                             "defaultConfiguration": {
                                 "level": "error"
+                            }
+                        },
+                        {
+                            "id": "RuleId",
+                            "name": "RuleName",
+                            "shortDescription": {
+                                "text": "RuleName"
+                            },
+                            "fullDescription": {
+                                "text": "ShortDescription"
+                            },
+                            "help": {
+                                "text": "LongDescription."
+                            },
+                            "properties": {
+                                "tags": [
+                                    "aws",
+                                    "kms",
+                                    "jersey",
+                                    "security",
+                                    "CWE-1",
+                                    "CWE-2"
+                                ],
+                                "security-severity": 3.8
+                            },
+                            "defaultConfiguration": {
+                                "level": "note"
+                            }
+                        },
+                        {
+                            "id": "RuleId2",
+                            "name": "RuleName2",
+                            "shortDescription": {
+                                "text": "RuleName2"
+                            },
+                            "fullDescription": {
+                                "text": "ShortDescription"
+                            },
+                            "help": {
+                                "text": "LongDescription."
+                            },
+                            "properties": {
+                                "tags": [
+                                    "aws",
+                                    "kms",
+                                    "jersey",
+                                    "security",
+                                    "CWE-1",
+                                    "CWE-2"
+                                ],
+                                "security-severity": 4.5
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning"
+                            }
+                        },
+                        {
+                            "id": "RuleId3",
+                            "name": "RuleName3",
+                            "shortDescription": {
+                                "text": "RuleName3"
+                            },
+                            "fullDescription": {
+                                "text": "ShortDescription"
+                            },
+                            "help": {
+                                "text": "LongDescription."
+                            },
+                            "properties": {
+                                "tags": [
+                                    "aws",
+                                    "kms",
+                                    "jersey",
+                                    "security",
+                                    "CWE-1",
+                                    "CWE-2"
+                                ],
+                                "security-severity": 8.9
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning"
                             }
                         },
                         {
@@ -158,8 +241,8 @@
             },
             "results": [
                 {
-                    "ruleId": "java/insecure-cryptography@v1.0",
-                    "level": "error",
+                    "ruleId": "RuleId",
+                    "level": "note",
                     "locations": [
                         {
                             "physicalLocation": {
@@ -167,19 +250,19 @@
                                     "uri": "src/main/java/com/mycompany/app/App.java"
                                 },
                                 "region": {
-                                    "startLine": 26,
-                                    "endLine": 26
+                                    "startLine": 14,
+                                    "endLine": 15
                                 }
                             }
                         }
                     ],
                     "message": {
-                        "text": "It looks like your code uses a cipher object with an insecure transformation. To make your\ncode more secure, use one of the following algorithms with a built-in integrity check:\nAES/GCM/NoPadding, or for Java 11 or newer, ChaCha20-Poly1305. Learn more about [`javax.crypto.Cipher.getInstance`](https://docs.oracle.com/javase/8/docs/api/javax/crypto/Cipher.html#getInstance-java.lang.String-).\n\n\nRelevant Locations:\n\n* src/main/java/com/mycompany/app/App.java, line: 26 \n\n    * src/main/java/com/mycompany/app/App.java, line: 26 (The constant value)\n\n"
+                        "text": "Description"
                     }
                 },
                 {
-                    "ruleId": "java/insecure-cryptography@v1.0",
-                    "level": "error",
+                    "ruleId": "RuleId2",
+                    "level": "warning",
                     "locations": [
                         {
                             "physicalLocation": {
@@ -187,19 +270,19 @@
                                     "uri": "src/main/java/com/mycompany/app/App.java"
                                 },
                                 "region": {
-                                    "startLine": 20,
-                                    "endLine": 20
+                                    "startLine": 14,
+                                    "endLine": 15
                                 }
                             }
                         }
                     ],
                     "message": {
-                        "text": "It looks like your code uses a cipher object with an insecure transformation. To make your\ncode more secure, use one of the following algorithms with a built-in integrity check:\nAES/GCM/NoPadding, or for Java 11 or newer, ChaCha20-Poly1305. Learn more about [`javax.crypto.Cipher.getInstance`](https://docs.oracle.com/javase/8/docs/api/javax/crypto/Cipher.html#getInstance-java.lang.String-).\n\n\nRelevant Locations:\n\n* src/main/java/com/mycompany/app/App.java, line: 20 \n\n    * src/main/java/com/mycompany/app/App.java, line: 20 (The constant value)\n\n"
+                        "text": "Description"
                     }
                 },
                 {
-                    "ruleId": "java/insecure-cryptography@v1.0",
-                    "level": "error",
+                    "ruleId": "RuleId3",
+                    "level": "warning",
                     "locations": [
                         {
                             "physicalLocation": {
@@ -207,18 +290,18 @@
                                     "uri": "src/main/java/com/mycompany/app/App.java"
                                 },
                                 "region": {
-                                    "startLine": 25,
-                                    "endLine": 25
+                                    "startLine": 14,
+                                    "endLine": 15
                                 }
                             }
                         }
                     ],
                     "message": {
-                        "text": "It looks like your code uses a cipher object with an insecure transformation. To make your\ncode more secure, use one of the following algorithms with a built-in integrity check:\nAES/GCM/NoPadding, or for Java 11 or newer, ChaCha20-Poly1305. Learn more about [`javax.crypto.Cipher.getInstance`](https://docs.oracle.com/javase/8/docs/api/javax/crypto/Cipher.html#getInstance-java.lang.String-).\n\n\nRelevant Locations:\n\n* src/main/java/com/mycompany/app/App.java, line: 25 \n\n    * src/main/java/com/mycompany/app/App.java, line: 18 (The constant value)\n\n"
+                        "text": "Description"
                     }
                 },
                 {
-                    "ruleId": "java/insecure-cryptography@v1.0",
+                    "ruleId": "java/hardcoded-credentials@v1.0",
                     "level": "error",
                     "locations": [
                         {
@@ -227,14 +310,14 @@
                                     "uri": "src/main/java/com/mycompany/app/App.java"
                                 },
                                 "region": {
-                                    "startLine": 19,
-                                    "endLine": 19
+                                    "startLine": 14,
+                                    "endLine": 15
                                 }
                             }
                         }
                     ],
                     "message": {
-                        "text": "It looks like your code uses a cipher object with an insecure transformation. To make your\ncode more secure, use one of the following algorithms with a built-in integrity check:\nAES/GCM/NoPadding, or for Java 11 or newer, ChaCha20-Poly1305. Learn more about [`javax.crypto.Cipher.getInstance`](https://docs.oracle.com/javase/8/docs/api/javax/crypto/Cipher.html#getInstance-java.lang.String-).\n\n\nRelevant Locations:\n\n* src/main/java/com/mycompany/app/App.java, line: 19 \n\n    * src/main/java/com/mycompany/app/App.java, line: 19 (The constant value)\n\n"
+                        "text": "This looks like an AWS access key.\nDon\u2019t embed access keys directly into code. Instead, use the AWS SDK or AWS Command Line Tools to store access keys in a secure location that can be referenced by your code. If an access key is in your code then it could have leaked. Therefore we recommend that you rotate your credentials as soon as possible. Learn more about [Best Practices for Managing AWS Access Keys](https://docs.aws.amazon.com/general/latest/gr/aws-access-keys-best-practices.html)."
                     }
                 }
             ]
