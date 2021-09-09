@@ -27,8 +27,8 @@
                                     "digital-signature",
                                     "cwe-327"
                                 ],
-                                "security-severity": 9
-                                "kind": "path-problem",
+                                "security-severity": 9,
+                                "kind": "path-problem"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
