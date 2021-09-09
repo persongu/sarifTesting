@@ -10,7 +10,7 @@
                     "rules": [
                         {
                             "id": "java/insecure-cryptography@v1.0",
-                            "name": "Insecure cryptography",
+                            "name": "Insecure_cryptography",
                             "shortDescription": {
                                 "text": "Insecure cryptography"
                             },
