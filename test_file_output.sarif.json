@@ -29,8 +29,7 @@
                                     "CWE-1",
                                     "CWE-2"
                                 ],
-                            "security-severity": 9
-
+                            "security-severity": "9"
                             },
                             "defaultConfiguration": {
                                 "level": "warning"
