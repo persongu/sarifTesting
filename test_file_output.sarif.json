@@ -9,31 +9,6 @@
                     "informationUri": "https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/how-codeguru-reviewer-works.html",
                     "rules": [
                         {
-                            "id": "java/insecure-cryptography@v1.0",
-                            "name": "Insecure cryptography",
-                            "shortDescription": {
-                                "text": "Insecure cryptography"
-                            },
-                            "fullDescription": {
-                                "text": "Weak, broken, or misconfigured cryptography can lead to security vulnerabilities."
-                            },
-                            "help": {
-                                "text": "Misuse of cryptography-related APIs can create security vulnerabilities. This includes one or more of the following: algorithms with known weaknesses, certain padding modes, lack of integrity checks, and insufficiently large key sizes."
-                            },
-                            "properties": {
-                                "tags": [
-                                    "cryptography",
-                                    "security",
-                                    "digital-signature",
-                                    "cwe-327"
-                                ],
-                                "security-severity": 9
-                            },
-                            "defaultConfiguration": {
-                                "level": "error"
-                            }
-                        },
-                        {
                             "id": "AWS Best Practices",
                             "name": "AWS Best Practices",
                             "shortDescription": {
@@ -158,83 +133,43 @@
             },
             "results": [
                 {
-                    "ruleId": "java/insecure-cryptography@v1.0",
-                    "level": "error",
+                    "ruleId": "AWSBestPractices",
+                    "level": "note",
                     "locations": [
                         {
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "uri": "src/main/java/com/mycompany/app/App.java"
+                                    "uri": "Fp"
                                 },
                                 "region": {
-                                    "startLine": 26,
-                                    "endLine": 26
+                                    "startLine": "StartLine",
+                                    "endLine": "EndLine"
                                 }
                             }
                         }
                     ],
                     "message": {
-                        "text": "It looks like your code uses a cipher object with an insecure transformation. To make your\ncode more secure, use one of the following algorithms with a built-in integrity check:\nAES/GCM/NoPadding, or for Java 11 or newer, ChaCha20-Poly1305. Learn more about [`javax.crypto.Cipher.getInstance`](https://docs.oracle.com/javase/8/docs/api/javax/crypto/Cipher.html#getInstance-java.lang.String-).\n\n\nRelevant Locations:\n\n* src/main/java/com/mycompany/app/App.java, line: 26 \n\n    * src/main/java/com/mycompany/app/App.java, line: 26 (The constant value)\n\n"
+                        "text": "Description"
                     }
                 },
                 {
-                    "ruleId": "java/insecure-cryptography@v1.0",
-                    "level": "error",
+                    "ruleId": "AWSBestPractices",
+                    "level": "note",
                     "locations": [
                         {
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "uri": "src/main/java/com/mycompany/app/App.java"
+                                    "uri": "Filepath2"
                                 },
                                 "region": {
-                                    "startLine": 20,
-                                    "endLine": 20
+                                    "startLine": "StartLine2",
+                                    "endLine": "EndLine2"
                                 }
                             }
                         }
                     ],
                     "message": {
-                        "text": "It looks like your code uses a cipher object with an insecure transformation. To make your\ncode more secure, use one of the following algorithms with a built-in integrity check:\nAES/GCM/NoPadding, or for Java 11 or newer, ChaCha20-Poly1305. Learn more about [`javax.crypto.Cipher.getInstance`](https://docs.oracle.com/javase/8/docs/api/javax/crypto/Cipher.html#getInstance-java.lang.String-).\n\n\nRelevant Locations:\n\n* src/main/java/com/mycompany/app/App.java, line: 20 \n\n    * src/main/java/com/mycompany/app/App.java, line: 20 (The constant value)\n\n"
-                    }
-                },
-                {
-                    "ruleId": "java/insecure-cryptography@v1.0",
-                    "level": "error",
-                    "locations": [
-                        {
-                            "physicalLocation": {
-                                "artifactLocation": {
-                                    "uri": "src/main/java/com/mycompany/app/App.java"
-                                },
-                                "region": {
-                                    "startLine": 25,
-                                    "endLine": 25
-                                }
-                            }
-                        }
-                    ],
-                    "message": {
-                        "text": "It looks like your code uses a cipher object with an insecure transformation. To make your\ncode more secure, use one of the following algorithms with a built-in integrity check:\nAES/GCM/NoPadding, or for Java 11 or newer, ChaCha20-Poly1305. Learn more about [`javax.crypto.Cipher.getInstance`](https://docs.oracle.com/javase/8/docs/api/javax/crypto/Cipher.html#getInstance-java.lang.String-).\n\n\nRelevant Locations:\n\n* src/main/java/com/mycompany/app/App.java, line: 25 \n\n    * src/main/java/com/mycompany/app/App.java, line: 18 (The constant value)\n\n"
-                    }
-                },
-                {
-                    "ruleId": "java/insecure-cryptography@v1.0",
-                    "level": "error",
-                    "locations": [
-                        {
-                            "physicalLocation": {
-                                "artifactLocation": {
-                                    "uri": "src/main/java/com/mycompany/app/App.java"
-                                },
-                                "region": {
-                                    "startLine": 19,
-                                    "endLine": 19
-                                }
-                            }
-                        }
-                    ],
-                    "message": {
-                        "text": "It looks like your code uses a cipher object with an insecure transformation. To make your\ncode more secure, use one of the following algorithms with a built-in integrity check:\nAES/GCM/NoPadding, or for Java 11 or newer, ChaCha20-Poly1305. Learn more about [`javax.crypto.Cipher.getInstance`](https://docs.oracle.com/javase/8/docs/api/javax/crypto/Cipher.html#getInstance-java.lang.String-).\n\n\nRelevant Locations:\n\n* src/main/java/com/mycompany/app/App.java, line: 19 \n\n    * src/main/java/com/mycompany/app/App.java, line: 19 (The constant value)\n\n"
+                        "text": "Description2"
                     }
                 }
             ]
