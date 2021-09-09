@@ -83,65 +83,7 @@
                     ],
                     "message": {
                         "text": "Description"
-                    },
-                    "codeFlows": [
-                        {
-                            "threadFlows": [
-                                {
-                                    "locations": [
-                                        {
-                                            "location": {
-                                                "message": {
-                                                    "text": "CLComment"
-                                                },
-                                                "physicalLocation": {
-                                                    "region": {
-                                                        "startLine": 24,
-                                                        "endLine": 25
-                                                    },
-                                                    "artifactLocation": {
-                                                        "uri": "src/main/java/com/mycompany/app/Server.java"
-                                                    }
-                                                }
-                                            }
-                                        },
-                                        {
-                                            "location": {
-                                                "message": {
-                                                    "text": "Code Location Comment!"
-                                                },
-                                                "physicalLocation": {
-                                                    "region": {
-                                                        "startLine": 17,
-                                                        "endLine": 20
-                                                    },
-                                                    "artifactLocation": {
-                                                        "uri": "src/main/java/com/mycompany/app/Server2.java"
-                                                    }
-                                                }
-                                            }
-                                        },
-                                        {
-                                            "location": {
-                                                "message": {
-                                                    "text": "Nested Code Location Comment!"
-                                                },
-                                                "physicalLocation": {
-                                                    "region": {
-                                                        "startLine": 1,
-                                                        "endLine": 3
-                                                    },
-                                                    "artifactLocation": {
-                                                        "uri": "src/main/java/com/mycompany/app/Server.java"
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
+                    }
                 },
                 {
                     "ruleId": "java/hardcoded-credentials@v1.0",
