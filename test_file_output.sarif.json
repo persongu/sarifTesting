@@ -9,6 +9,32 @@
                     "informationUri": "https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/how-codeguru-reviewer-works.html",
                     "rules": [
                         {
+                            "id": "RuleId",
+                            "name": "RuleName",
+                            "shortDescription": {
+                                "text": "RuleName"
+                            },
+                            "fullDescription": {
+                                "text": "ShortDescription"
+                            },
+                            "help": {
+                                "text": "LongDescription."
+                            },
+                            "properties": {
+                                "tags": [
+                                    "aws",
+                                    "kms",
+                                    "jersey",
+                                    "CWE-1",
+                                    "CWE-2"
+                                ],
+                                "security-severity": "7.0"                                
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning"
+                            }
+                        },
+                        {
                             "id": "java/hardcoded-credentials@v1.0",
                             "name": "Hardcoded credentials",
                             "shortDescription": {
@@ -29,211 +55,10 @@
                                     "CWE-1",
                                     "CWE-2"
                                 ],
-                                "security-severity": 9
+                                "security-severity": "7.0"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
-                            }
-                        },
-                        {
-                            "id": "RuleId",
-                            "name": "RuleName",
-                            "shortDescription": {
-                                "text": "RuleName"
-                            },
-                            "fullDescription": {
-                                "text": "ShortDescription"
-                            },
-                            "help": {
-                                "text": "LongDescription."
-                            },
-                            "properties": {
-                                "tags": [
-                                    "aws",
-                                    "kms",
-                                    "jersey",
-                                    "security",
-                                    "CWE-1",
-                                    "CWE-2"
-                                ],
-                                "security-severity": 3.8
-                            },
-                            "defaultConfiguration": {
-                                "level": "note"
-                            }
-                        },
-                        {
-                            "id": "RuleId2",
-                            "name": "RuleName2",
-                            "shortDescription": {
-                                "text": "RuleName2"
-                            },
-                            "fullDescription": {
-                                "text": "ShortDescription"
-                            },
-                            "help": {
-                                "text": "LongDescription."
-                            },
-                            "properties": {
-                                "tags": [
-                                    "aws",
-                                    "kms",
-                                    "jersey",
-                                    "security",
-                                    "CWE-1",
-                                    "CWE-2"
-                                ],
-                                "security-severity": 4.5
-                            },
-                            "defaultConfiguration": {
-                                "level": "warning"
-                            }
-                        },
-                        {
-                            "id": "RuleId3",
-                            "name": "RuleName3",
-                            "shortDescription": {
-                                "text": "RuleName3"
-                            },
-                            "fullDescription": {
-                                "text": "ShortDescription"
-                            },
-                            "help": {
-                                "text": "LongDescription."
-                            },
-                            "properties": {
-                                "tags": [
-                                    "aws",
-                                    "kms",
-                                    "jersey",
-                                    "security",
-                                    "CWE-1",
-                                    "CWE-2"
-                                ],
-                                "security-severity": 8.9
-                            },
-                            "defaultConfiguration": {
-                                "level": "warning"
-                            }
-                        },
-                        {
-                            "id": "AWS Best Practices",
-                            "name": "AWS Best Practices",
-                            "shortDescription": {
-                                "text": "AWS Best Practices",
-                                "markdown": "AWS Best Practices"
-                            },
-                            "help": {
-                                "text": "AWS best practices are rules that help you improve your code quality by identifying areas where your code doesn\u2019t follow a best practice of an AWS API.",
-                                "markdown": "AWS best practices are rules that help you improve your code quality by identifying areas where your code doesn\u2019t follow a best practice of an AWS API."
-                            }
-                        },
-                        {
-                            "id": "AWS CloudFormation Issues",
-                            "name": "AWS CloudFormation Issues",
-                            "shortDescription": {
-                                "text": "AWS CloudFormation Issues",
-                                "markdown": "AWS CloudFormation Issues"
-                            },
-                            "help": {
-                                "text": "CloudFormation rules help you improve the code quality of your CloudFormation templates.",
-                                "markdown": "CloudFormation rules help you improve the code quality of your CloudFormation templates."
-                            }
-                        },
-                        {
-                            "id": "Duplicate Code",
-                            "name": "Duplicate Code",
-                            "shortDescription": {
-                                "text": "Duplicate Code",
-                                "markdown": "Duplicate Code"
-                            },
-                            "help": {
-                                "text": "Duplicate code is a rule type that helps you improve your code quality by detecting duplicated code that could be consolidated for better code maintainability.",
-                                "markdown": "Duplicate code is a rule type that helps you improve your code quality by detecting duplicated code that could be consolidated for better code maintainability."
-                            }
-                        },
-                        {
-                            "id": "Code Maintenance Issues",
-                            "name": "Code Maintenance Issues",
-                            "shortDescription": {
-                                "text": "Code Maintenance Issues",
-                                "markdown": "Code Maintenance Issues"
-                            },
-                            "help": {
-                                "text": "Code maintenance rules are meant to improve your code quality by detecting code complexities or any characteristic in your source code that makes the code difficult to maintain over time.",
-                                "markdown": "Code maintenance rules are meant to improve your code quality by detecting code complexities or any characteristic in your source code that makes the code difficult to maintain over time."
-                            }
-                        },
-                        {
-                            "id": "Concurrency Issues",
-                            "name": "Concurrency Issues",
-                            "shortDescription": {
-                                "text": "Concurrency Issues",
-                                "markdown": "Concurrency Issues"
-                            },
-                            "help": {
-                                "text": "Concurrency rules help you improve your code quality by detecting missing synchronization resulting in incorrect functionality or excessive synchronization leading to performance issues.",
-                                "markdown": "Concurrency rules help you improve your code quality by detecting missing synchronization resulting in incorrect functionality or excessive synchronization leading to performance issues."
-                            }
-                        },
-                        {
-                            "id": "Input Validations",
-                            "name": "Input Validations",
-                            "shortDescription": {
-                                "text": "Input Validations",
-                                "markdown": "Input Validations"
-                            },
-                            "help": {
-                                "text": "Input validations is a rule type that helps you improve the security of your code by identifying areas where malformed data might be entering your database and triggering malfunctions of downstream components.",
-                                "markdown": "Input validations is a rule type that helps you improve the security of your code by identifying areas where malformed data might be entering your database and triggering malfunctions of downstream components."
-                            }
-                        },
-                        {
-                            "id": "Python Best Practices",
-                            "name": "Python Best Practices",
-                            "shortDescription": {
-                                "text": "Python Best Practices",
-                                "markdown": "Python Best Practices"
-                            },
-                            "help": {
-                                "text": "Python best practices are rules that help you improve your code quality by identifying areas where your code doesn't follow a best practice of the language or one of its libraries.",
-                                "markdown": "Python best practices are rules that help you improve your code quality by identifying areas where your code doesn't follow a best practice of the language or one of its libraries."
-                            }
-                        },
-                        {
-                            "id": "Java Best Practices",
-                            "name": "Java Best Practices",
-                            "shortDescription": {
-                                "text": "Java Best Practices",
-                                "markdown": "Java Best Practices"
-                            },
-                            "help": {
-                                "text": "Java best practices are rules that help you improve your code quality by identifying areas where your code doesn't follow a best practice set by the language or one of its libraries.",
-                                "markdown": "Java best practices are rules that help you improve your code quality by identifying areas where your code doesn't follow a best practice set by the language or one of its libraries."
-                            }
-                        },
-                        {
-                            "id": "Resource Leaks",
-                            "name": "Resource Leaks",
-                            "shortDescription": {
-                                "text": "Resource Leaks",
-                                "markdown": "Resource Leaks"
-                            },
-                            "help": {
-                                "text": "Resource leaks is a rule type that helps you improve the security of your code by identifying leaks in resource objects.",
-                                "markdown": "Resource leaks is a rule type that helps you improve the security of your code by identifying leaks in resource objects."
-                            }
-                        },
-                        {
-                            "id": "Security Issues",
-                            "name": "Security Issues",
-                            "shortDescription": {
-                                "text": "Security Issues",
-                                "markdown": "Security Issues"
-                            },
-                            "help": {
-                                "text": "Security rules help you improve the security of your code by identifying risks from the top ten Open Web Application Security Project (OWASP) categories, security best practices for AWS APIs, and common Java crypto libraries. OWASP is a standard awareness document for developers and web application security.",
-                                "markdown": "Security rules help you improve the security of your code by identifying risks from the top ten Open Web Application Security Project (OWASP) categories, security best practices for AWS APIs, and common Java crypto libraries. OWASP is a standard awareness document for developers and web application security."
                             }
                         }
                     ]
@@ -258,47 +83,65 @@
                     ],
                     "message": {
                         "text": "Description"
-                    }
-                },
-                {
-                    "ruleId": "RuleId2",
-                    "level": "warning",
-                    "locations": [
+                    },
+                    "codeFlows": [
                         {
-                            "physicalLocation": {
-                                "artifactLocation": {
-                                    "uri": "src/main/java/com/mycompany/app/App.java"
-                                },
-                                "region": {
-                                    "startLine": 14,
-                                    "endLine": 15
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "message": {
+                                                    "text": "CLComment"
+                                                },
+                                                "physicalLocation": {
+                                                    "region": {
+                                                        "startLine": 24,
+                                                        "endLine": 25
+                                                    },
+                                                    "artifactLocation": {
+                                                        "uri": "src/main/java/com/mycompany/app/Server.java"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "location": {
+                                                "message": {
+                                                    "text": "Code Location Comment!"
+                                                },
+                                                "physicalLocation": {
+                                                    "region": {
+                                                        "startLine": 17,
+                                                        "endLine": 20
+                                                    },
+                                                    "artifactLocation": {
+                                                        "uri": "src/main/java/com/mycompany/app/Server2.java"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "location": {
+                                                "message": {
+                                                    "text": "Nested Code Location Comment!"
+                                                },
+                                                "physicalLocation": {
+                                                    "region": {
+                                                        "startLine": 1,
+                                                        "endLine": 3
+                                                    },
+                                                    "artifactLocation": {
+                                                        "uri": "src/main/java/com/mycompany/app/Server.java"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
                                 }
-                            }
+                            ]
                         }
-                    ],
-                    "message": {
-                        "text": "Description"
-                    }
-                },
-                {
-                    "ruleId": "RuleId3",
-                    "level": "warning",
-                    "locations": [
-                        {
-                            "physicalLocation": {
-                                "artifactLocation": {
-                                    "uri": "src/main/java/com/mycompany/app/App.java"
-                                },
-                                "region": {
-                                    "startLine": 14,
-                                    "endLine": 15
-                                }
-                            }
-                        }
-                    ],
-                    "message": {
-                        "text": "Description"
-                    }
+                    ]
                 },
                 {
                     "ruleId": "java/hardcoded-credentials@v1.0",
@@ -318,7 +161,65 @@
                     ],
                     "message": {
                         "text": "This looks like an AWS access key.\nDon\u2019t embed access keys directly into code. Instead, use the AWS SDK or AWS Command Line Tools to store access keys in a secure location that can be referenced by your code. If an access key is in your code then it could have leaked. Therefore we recommend that you rotate your credentials as soon as possible. Learn more about [Best Practices for Managing AWS Access Keys](https://docs.aws.amazon.com/general/latest/gr/aws-access-keys-best-practices.html)."
-                    }
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "message": {
+                                                    "text": "CLComment"
+                                                },
+                                                "physicalLocation": {
+                                                    "region": {
+                                                        "startLine": 24,
+                                                        "endLine": 25
+                                                    },
+                                                    "artifactLocation": {
+                                                        "uri": "src/main/java/com/mycompany/app/Server.java"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "location": {
+                                                "message": {
+                                                    "text": "CLComment2"
+                                                },
+                                                "physicalLocation": {
+                                                    "region": {
+                                                        "startLine": 16,
+                                                        "endLine": 17
+                                                    },
+                                                    "artifactLocation": {
+                                                        "uri": "src/main/java/com/mycompany/app/Server2.java"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "location": {
+                                                "message": {
+                                                    "text": "C2LComment"
+                                                },
+                                                "physicalLocation": {
+                                                    "region": {
+                                                        "startLine": 1,
+                                                        "endLine": 3
+                                                    },
+                                                    "artifactLocation": {
+                                                        "uri": "src/main/java/com/mycompany/app/Server.java"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         }
