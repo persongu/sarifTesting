@@ -31,7 +31,7 @@
                                 ]
                             },
                             "defaultConfiguration": {
-                                "level": "critical"
+                                "level": "error"
                             }
                         },
                         {
@@ -54,9 +54,9 @@
                                     "security",
                                     "CWE-1",
                                     "CWE-2"
-                                ]
+                                ],
+                                "security-severity": 7.0,
                             },
-                            "properties.security-severity": 7.0,
                             "defaultConfiguration": {
                                 "level": "error"
                             }
